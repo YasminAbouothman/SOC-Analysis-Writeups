@@ -64,6 +64,8 @@ Now that we’ve covered the important fields to examine, let’s answer the que
 > Open the **Practice-Security.evtx** file on the VM’s Desktop.
 Which IP performed a brute force of the THM-PC?
 
+&nbsp;&nbsp;&nbsp;
+
 *open the Practice-Security.evtx file in Event Viewer, then filter the Security log for Event IDs 4624 and 4625. This will display all successful and failed logon events, making it easier to analyse the authentication activity.*
 
 &nbsp;&nbsp;&nbsp;
@@ -83,8 +85,35 @@ Sort the events by the **Date and Time** column in **ascending order (↑)** to 
 After sorting the events by **Date and Time** in ascending order, we can reconstruct the attack timeline.
 
 The first **Failed Logon (Event ID 4625)** occurred at ***10:53:26*** for the account ```thmadmin``` The attacker then attempted to authenticate with several other accounts in quick succession:
+&nbsp;&nbsp;&nbsp;
+
+- ***10:53:27 PM*** — ```superuser``` (Event ID 4625)
+- ***10:53:27 PM*** — ```helpdesk``` (Event ID 4625)
+- ***10:53:28 PM*** — ```support``` (Event ID 4625)
+- ***10:53:30 PM*** — ```Administrator``` (Event ID 4625)
+  
+&nbsp;&nbsp;&nbsp;
+
+Immediately after the failed logon attempt against the ```Administrator``` account, we observe a **Successful Logon (Event ID 4624)** for the same account at ***10:53:30 PM***
+
+This sequence of events suggests that the attacker tried multiple accounts in a short period of time and eventually succeeded in authenticating as ```Administrator ```.
+
+&nbsp;&nbsp;&nbsp;
 
 
+<img width="1252" height="346" alt="image" src="https://github.com/user-attachments/assets/f1634f01-075a-40b0-9afe-2c63768d6d54" />
+&nbsp;&nbsp;&nbsp;
+
+
+Now that we’ve identified the accounts targeted by the attacker, the next step is to determine **which IP address** performed the attack.
+
+To do this, examine the **Source Network Address** field in the **Event ID 4625** entries
+
+<img width="723" height="256" alt="image" src="https://github.com/user-attachments/assets/f2d28a5d-9ca4-4cb1-8964-76d8bce085f1" />
+
+&nbsp;&nbsp;&nbsp;
+
+Answer: ```10.10.53.248```
 
 ## **Task 4: Security Log User Management**
 
