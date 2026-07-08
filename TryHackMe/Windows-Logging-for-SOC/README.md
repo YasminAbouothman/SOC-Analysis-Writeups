@@ -157,7 +157,30 @@ Some of the most important User Management Event IDs are:
 - **4732** => A member was added to a security group.
 - **4733** => A member was removed from a security group.
 - **4723** => generated when a user attempts to change their own password. While this is often a legitimate action, it can also be a sign of malicious activity if a compromised account’s password is changed to maintain unauthorised access.
+
+during an investigation, we come across an unfamiliar account named ```svc_sysrestore```. Earlier, we determined that the attacker successfully compromised the ```Administrator``` account through RDP. After gaining administrative access to ```THM-PC```, the attacker created the ```svc_sysrestore``` account to establish persistence.
   
+Now, let’s verify these actions by examining the **User Management events** in the **Windows Security log**.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+> Continue with the “Practice-Security.evtx” file on the VM’s Desktop.
+Which user was created by the attacker soon after the RDP login?
+
+open the Practice-Security.evtx file in Event Viewer, then filter the Security log for **Event ID 4624 (Successful Logon)** and Event ID 4720 (A user account was created).
+
+
+<img width="928" height="538" alt="image" src="https://github.com/user-attachments/assets/93785a61-04e1-47a7-ac38-6056df38975d" />
+
+First, identify the successful **RDP** logon **(Event ID 4624)** for the ```Administrator``` account. Then, look for an **Event ID 4720** that occurs shortly afterward.
+
+<img width="961" height="556" alt="image" src="https://github.com/user-attachments/assets/f839f042-9dff-42fd-b300-51cc1af0b878" />
+
+The **Successful Logon (Event ID 4624)** we’re looking for occurred at ***10:53:41 PM***. We know this is the correct event because, in the previous task, we identified the ```Administrator``` account’s Logon ID as ```0x183C36D```.
+
+#### Note: The Logon ID allows SOC analysts to correlate events that belong to the same logon session. Rather than relying solely on the username or timestamp, you can use the Logon ID to track all actions performed after a user successfully authenticates. This makes it much easier to reconstruct the attacker’s activity and build an accurate timeline during an investigation.
+
 
 ## **Task 5: Sysmon Process Monitoring**
 
