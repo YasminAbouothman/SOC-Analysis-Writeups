@@ -187,6 +187,23 @@ The **Successful Logon (Event ID 4624)** we’re looking for occurred at ***10:5
 
 #### Note: The Logon ID allows SOC analysts to correlate events that belong to the same logon session. Rather than relying solely on the username or timestamp, you can use the Logon ID to track all actions performed after a user successfully authenticates. This makes it much easier to reconstruct the attacker’s activity and build an accurate timeline during an investigation.
 
+&nbsp;&nbsp;&nbsp;
+
+<img width="520" height="192" alt="image" src="https://github.com/user-attachments/assets/8a04605b-b4ba-4c81-98bf-ff5512282999" />
+
+&nbsp;&nbsp;&nbsp;
+
+
+By matching this Logon ID, we can correlate the **successful RDP session** with subsequent events, such as **Event ID 4720**, to determine which user account the attacker created after gaining access.
+
+&nbsp;&nbsp;&nbsp;
+
+<img width="520" height="205" alt="image" src="https://github.com/user-attachments/assets/5ee4c6c8-2ab6-4e74-bbe2-bfbdd6d9ad1f" />
+
+&nbsp;&nbsp;&nbsp;
+
+Answer: ```svc_sysrestore```
+
 
 ## **Task 5: Sysmon Process Monitoring**
 
