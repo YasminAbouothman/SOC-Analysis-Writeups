@@ -40,8 +40,8 @@ When examining these events, the most important fields to check are:
 
     1. Logon Type: If the attack targets an RDP service, the Logon Type will typically be 3 or 10, depending on whether Network Level Authentication (NLA) is enabled.
 
-    * Logon Type 10 (Remote Interactive): where NLA is disabled.
-    * Logon Type 3 (Network): Common on modern Windows systems where NLA is enabled.
+    - Logon Type 10 (Remote Interactive): where NLA is disabled.
+    - Logon Type 3 (Network): Common on modern Windows systems where NLA is enabled.
 
 ## **Task 4: Security Log User Management**
 
