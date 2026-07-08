@@ -204,6 +204,58 @@ By matching this Logon ID, we can correlate the **successful RDP session** with 
 
 Answer: ```svc_sysrestore```
 
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+> Which two privileged groups was the backdoor user added to?
+(Answer in alphabetical order, e.g. “Administrators, Power Users”)
+
+filter the Security log for Event IDs **4624** (Successful Logon), **4720** (A user account was created), and **4732** (A member was added to a security-enabled local group).
+
+&nbsp;&nbsp;&nbsp;
+
+<img width="910" height="546" alt="image" src="https://github.com/user-attachments/assets/eff719d6-8761-45ee-a743-82ba59e90440" />
+
+&nbsp;&nbsp;&nbsp;
+
+We previously located the **Successful Logon (Event ID 4624)** for the ```Administrator``` account at ***10:53:41 PM***. Next, we found Event ID **4720** at ***10:54:58 PM***, which shows that the attacker created the  ```svc_sysrestore``` account.
+
+Our next step is to look for Event ID 4732 entries that occur shortly afterward. These events will show which local security groups the attacker added ```svc_sysrestore``` to
+
+<img width="522" height="208" alt="image" src="https://github.com/user-attachments/assets/7120ba05-3572-4ee0-875c-3cf91e677a5a" />
+
+&nbsp;&nbsp;&nbsp;
+
+The first privileged group that the svc_sysrestore account was added to is Backup Operators.
+
+&nbsp;&nbsp;&nbsp;
+
+<img width="522" height="237" alt="image" src="https://github.com/user-attachments/assets/da15c3e7-f61d-4813-a833-4f4b7aab273b" />
+
+&nbsp;&nbsp;&nbsp;
+
+<img width="520" height="186" alt="image" src="https://github.com/user-attachments/assets/e86faf3f-1c8a-4b95-a676-58acbb387a4f" />
+
+&nbsp;&nbsp;&nbsp;
+
+The second **Event ID 4732** shows that the attacker added the ```svc_sysrestore``` account to the Remote Desktop Users group
+
+<img width="516" height="228" alt="image" src="https://github.com/user-attachments/assets/ce71dacc-b8e2-46a9-aff7-2c7ab98de5df" />
+
+&nbsp;&nbsp;&nbsp;
+
+**Answer**: ```Backup Operators, Remote Desktop Users```
+
+&nbsp;&nbsp;&nbsp;
+
+> Does the Logon ID field match what you saw in the previous task (Yea/Nay)?
+
+yea
+
+<img width="247" height="51" alt="image" src="https://github.com/user-attachments/assets/bfdbfce6-ffa4-4288-9bc6-ed5f718cb4ba" />
+
+&nbsp;&nbsp;&nbsp;
+
 
 ## **Task 5: Sysmon Process Monitoring**
 
