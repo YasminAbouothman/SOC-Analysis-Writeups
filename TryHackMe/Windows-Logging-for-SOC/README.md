@@ -58,6 +58,7 @@ When examining these events, the most important fields to check are:
     4. Failure Reason: This field explains why the logon attempt failed.
     
 Now that we’ve covered the important fields to examine, let’s answer the questions for this task.
+
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
