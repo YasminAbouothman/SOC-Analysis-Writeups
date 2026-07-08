@@ -157,6 +157,7 @@ Some of the most important User Management Event IDs are:
 - **4732** => A member was added to a security group.
 - **4733** => A member was removed from a security group.
 - **4723** => generated when a user attempts to change their own password. While this is often a legitimate action, it can also be a sign of malicious activity if a compromised account’s password is changed to maintain unauthorised access.
+  
 
 ## **Task 5: Sysmon Process Monitoring**
 
