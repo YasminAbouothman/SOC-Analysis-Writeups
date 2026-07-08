@@ -18,3 +18,11 @@ In this task, you’ll learn where Windows stores its event logs and how to view
 ```text
 C:\Windows\System32\winevt\Logs
 ```
+
+which can be opened with Event Viewer or analyzed using other log analysis and forensic tools.
+
+<img width="1905" height="585" alt="image" src="https://github.com/user-attachments/assets/ce50b7c3-a2f0-40c1-8d66-555a6763d322" />
+
+> By looking at the last screenshot, we can see that the log source is **Security** , and **Event ID 4624** represents a successful logon.
+
+Answer: ```text Security / 4624 ```
