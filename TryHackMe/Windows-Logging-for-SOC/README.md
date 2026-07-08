@@ -43,7 +43,6 @@ When examining these events, the most important fields to check are:
     - Logon Type 10 (Remote Interactive): where NLA is disabled.
     - Logon Type 3 (Network): Common on modern Windows systems where NLA is enabled.
 &nbsp;&nbsp;&nbsp;
-&nbsp;&nbsp;&nbsp;
 
     2. Account Name: This field identifies the user account that is being targeted. 
     It helps you determine which account the attacker is attempting to authenticate with.
@@ -51,6 +50,19 @@ When examining these events, the most important fields to check are:
     For example, you can use it to trace what happened after a successful logon, such as when the user logged off, started a process
     This allows you to build a timeline of the user’s activity and determine whether the account was used maliciously after authentication.
 
+&nbsp;&nbsp;&nbsp;
+    
+    3. Source Network Address: During an investigation, this is one of the most important fields because it helps identify the attacker’s source IP
+&nbsp;&nbsp;&nbsp;
+
+    4. Failure Reason: This field explains why the logon attempt failed.
+    
+Now that we’ve covered the important fields to examine, let’s answer the questions for this task.
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+> Open the **Practice-Security.evtx** file on the VM’s Desktop.
+Which IP performed a brute force of the THM-PC?
 
 
 ## **Task 4: Security Log User Management**
