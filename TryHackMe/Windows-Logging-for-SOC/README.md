@@ -173,6 +173,7 @@ open the Practice-Security.evtx file in Event Viewer, then filter the Security l
 
 <img width="928" height="538" alt="image" src="https://github.com/user-attachments/assets/93785a61-04e1-47a7-ac38-6056df38975d" />
 
+
 First, identify the successful **RDP** logon **(Event ID 4624)** for the ```Administrator``` account. Then, look for an **Event ID 4720** that occurs shortly afterward.
 
 <img width="961" height="556" alt="image" src="https://github.com/user-attachments/assets/f839f042-9dff-42fd-b300-51cc1af0b878" />
