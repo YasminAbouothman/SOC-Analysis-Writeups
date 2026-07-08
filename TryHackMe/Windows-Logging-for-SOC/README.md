@@ -149,6 +149,15 @@ Next, open the event details and verify that the **Logon Type** is **10** which 
 
 ## **Task 4: Security Log User Management**
 
+In Windows Security logs, **User Management events** are events that record changes made to user accounts and groups. These events are very important for SOC analysts because attackers often create new accounts, reset passwords, or add users to privileged groups after compromising a system.
+
+Some of the most important User Management Event IDs are:
+
+- **4720** => A user account was created.
+- **4732** => A member was added to a security group.
+- **4733** => A member was removed from a security group.
+- **4723** => generated when a user attempts to change their own password. While this is often a legitimate action, it can also be a sign of malicious activity if a compromised account’s password is changed to maintain unauthorised access.
+
 ## **Task 5: Sysmon Process Monitoring**
 
 ## **Task 6: Sysmon Files and Network**
