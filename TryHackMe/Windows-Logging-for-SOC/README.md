@@ -25,4 +25,4 @@ which can be opened with Event Viewer or analyzed using other log analysis and f
 
 > By looking at the last screenshot, we can see that the log source is **Security** , and **Event ID 4624** represents a successful logon.
 
-Answer: ```text Security / 4624 ```
+Answer: ``` Security / 4624 ```
