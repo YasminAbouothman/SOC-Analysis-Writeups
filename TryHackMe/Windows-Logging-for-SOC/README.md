@@ -29,3 +29,20 @@ which can be opened with Event Viewer or analyzed using other log analysis and f
 >  By looking at the last screenshot, we can see that the log source is **Security** , and **Event ID 4624** represents a successful logon.
 
 Answer: ``` Security / 4624 ```
+
+## **Task 3: Security Log Authentication**
+
+## **Task 4: Security Log User Management**
+
+## **Task 5: Sysmon Process Monitoring**
+
+## **Task 6: Sysmon Files and Network**
+
+## **Task 7: Powershell Logging Commands**
+
+
+
+
+
+
+
