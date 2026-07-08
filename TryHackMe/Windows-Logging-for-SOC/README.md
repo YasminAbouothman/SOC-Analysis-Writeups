@@ -178,6 +178,9 @@ First, identify the successful **RDP** logon **(Event ID 4624)** for the ```Admi
 
 <img width="961" height="556" alt="image" src="https://github.com/user-attachments/assets/f839f042-9dff-42fd-b300-51cc1af0b878" />
 
+&nbsp;&nbsp;&nbsp;
+
+
 The **Successful Logon (Event ID 4624)** we’re looking for occurred at ***10:53:41 PM***. We know this is the correct event because, in the previous task, we identified the ```Administrator``` account’s Logon ID as ```0x183C36D```.
 
 
