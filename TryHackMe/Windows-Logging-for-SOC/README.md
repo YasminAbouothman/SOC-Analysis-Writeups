@@ -43,7 +43,8 @@ When examining these events, the most important fields to check are:
     - Logon Type 10 (Remote Interactive): where NLA is disabled.
     - Logon Type 3 (Network): Common on modern Windows systems where NLA is enabled.
 
-    2. Account Name: This field identifies the user account that is being targeted. It helps you determine which account the attacker is attempting to authenticate with.
+    2. Account Name: This field identifies the user account that is being targeted. 
+    It helps you determine which account the attacker is attempting to authenticate with.
     It is also important to note the Logon ID, which is a unique identifier assigned to each logon session. we can use the Logon ID to correlate related events in the Security log.
     For example, you can use it to trace what happened after a successful logon, such as when the user logged off, started a process
     This allows you to build a timeline of the user’s activity and determine whether the account was used maliciously after authentication.
