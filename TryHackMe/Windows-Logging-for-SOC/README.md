@@ -133,6 +133,11 @@ In the previous step, we observed multiple failed logon attempts against differe
 
 Answer: ```Administrator```
 
+> What was the Logon ID of the malicious RDP login?
+Note: The login you are looking for has a Logon Type 10.
+
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 ## **Task 4: Security Log User Management**
 
