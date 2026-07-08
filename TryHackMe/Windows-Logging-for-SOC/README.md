@@ -61,6 +61,7 @@ Now that we’ve covered the important fields to examine, let’s answer the que
 &nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;
 
+
 > Open the **Practice-Security.evtx** file on the VM’s Desktop.
 Which IP performed a brute force of the THM-PC?
 
