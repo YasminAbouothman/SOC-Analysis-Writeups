@@ -437,6 +437,6 @@ Press enter or click to view image in full size
 
 &nbsp;&nbsp;&nbsp;
 
-&bull; &bull; &bull;&bull; &bull; &bull;
+&bull; &bull; &bull; &bull; &bull; &bull;
 
 ## **Thank you for reading this walkthrough, and I hope it helped you gain a better understanding of Windows logging for SOC investigations.**
