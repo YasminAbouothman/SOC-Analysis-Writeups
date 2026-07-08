@@ -118,6 +118,21 @@ To do this, examine the **Source Network Address** field in the **Event ID 4625*
 
 Answer: ```10.10.53.248```
 
+&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
+
+> Which user has been breached as a result of the attack?
+
+&nbsp;&nbsp;&nbsp;
+
+To answer this question, look for a **Successful Logon (Event ID 4624)** that occurs after the series of **Failed Logon (Event ID 4625)** events.
+
+In the previous step, we observed multiple failed logon attempts against different accounts. Immediately afterward, there is a **Successful Logon (Event ID 4624)** for the ```Administrator``` account.
+
+Answer: ```Administrator```
+
+
 ## **Task 4: Security Log User Management**
 
 ## **Task 5: Sysmon Process Monitoring**
