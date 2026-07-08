@@ -65,6 +65,8 @@ Now that we’ve covered the important fields to examine, let’s answer the que
 Which IP performed a brute force of the THM-PC?
 
 &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
+
 
 *open the Practice-Security.evtx file in Event Viewer, then filter the Security log for Event IDs 4624 and 4625. This will display all successful and failed logon events, making it easier to analyse the authentication activity.*
 
