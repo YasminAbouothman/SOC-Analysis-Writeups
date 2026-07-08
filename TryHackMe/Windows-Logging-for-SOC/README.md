@@ -180,6 +180,8 @@ First, identify the successful **RDP** logon **(Event ID 4624)** for the ```Admi
 
 The **Successful Logon (Event ID 4624)** we’re looking for occurred at ***10:53:41 PM***. We know this is the correct event because, in the previous task, we identified the ```Administrator``` account’s Logon ID as ```0x183C36D```.
 
+
+
 #### Note: The Logon ID allows SOC analysts to correlate events that belong to the same logon session. Rather than relying solely on the username or timestamp, you can use the Logon ID to track all actions performed after a user successfully authenticates. This makes it much easier to reconstruct the attacker’s activity and build an accurate timeline during an investigation.
 
 
