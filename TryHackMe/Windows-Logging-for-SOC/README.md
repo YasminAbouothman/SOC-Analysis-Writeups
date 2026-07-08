@@ -66,6 +66,10 @@ Which IP performed a brute force of the THM-PC?
 
 *open the Practice-Security.evtx file in Event Viewer, then filter the Security log for Event IDs 4624 and 4625. This will display all successful and failed logon events, making it easier to analyse the authentication activity.*
 
+<img width="1275" height="538" alt="image" src="https://github.com/user-attachments/assets/ef83ca5b-4bc4-4297-929d-19f73f3e10b4" />
+
+Sort the events by the **Date and Time** column in **ascending order (↑)** to display the oldest events first. This makes it easier to follow the sequence of authentication attempts from the beginning of the attack.
+
 
 ## **Task 4: Security Log User Management**
 
