@@ -109,6 +109,9 @@ Now that we’ve identified the accounts targeted by the attacker, the next step
 
 To do this, examine the **Source Network Address** field in the **Event ID 4625** entries
 
+&nbsp;&nbsp;&nbsp;
+
+
 <img width="723" height="256" alt="image" src="https://github.com/user-attachments/assets/f2d28a5d-9ca4-4cb1-8964-76d8bce085f1" />
 
 &nbsp;&nbsp;&nbsp;
