@@ -14,4 +14,4 @@ No answer needed
 
 In this task, you’ll learn where Windows stores its event logs and how to view them. The easiest way to access these logs is by using **Event Viewer**, a built in Windows tool that lets you browse and analyze system events.
 
-   #### Windows event logs are stored by default in the following directory:
+ Windows event logs are stored by default in the following directory:
