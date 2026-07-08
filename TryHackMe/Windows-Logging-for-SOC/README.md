@@ -107,10 +107,10 @@ This sequence of events suggests that the attacker tried multiple accounts in a 
 
 Now that we’ve identified the accounts targeted by the attacker, the next step is to determine **which IP address** performed the attack.
 
+
 To do this, examine the **Source Network Address** field in the **Event ID 4625** entries
 
 &nbsp;&nbsp;&nbsp;
-
 
 <img width="723" height="256" alt="image" src="https://github.com/user-attachments/assets/f2d28a5d-9ca4-4cb1-8964-76d8bce085f1" />
 
