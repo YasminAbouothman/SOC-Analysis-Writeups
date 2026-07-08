@@ -24,6 +24,6 @@ which can be opened with Event Viewer or analyzed using other log analysis and f
 <img width="1905" height="585" alt="image" src="https://github.com/user-attachments/assets/ce50b7c3-a2f0-40c1-8d66-555a6763d322" />
 
 
-> &nbsp;&nbsp;&nbsp; By looking at the last screenshot, we can see that the log source is **Security** , and **Event ID 4624** represents a successful logon.
+> &nbsp;&nbsp;&nbsp;By looking at the last screenshot, we can see that the log source is **Security** , and **Event ID 4624** represents a successful logon.
 
 Answer: ``` Security / 4624 ```
