@@ -143,8 +143,8 @@ To answer this question, locate the **Successful Logon (Event ID 4624)** for the
 
 Next, open the event details and verify that the **Logon Type** is **10** which indicates a successful RDP logon.
 
-<img width="721" height="322" alt="image" src="https://github.com/user-attachments/assets/7e0bc7ec-d9e9-4cf3-b86d-4ae2755d9736" />
 
+<img width="721" height="322" alt="image" src="https://github.com/user-attachments/assets/7e0bc7ec-d9e9-4cf3-b86d-4ae2755d9736" />
 
 
 ## **Task 4: Security Log User Management**
